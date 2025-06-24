@@ -3,143 +3,133 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>InfoWeb Escalante</title>
+  <title>Inicio - InfoWeb Escalante</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
   <style>
     body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: #e6ecff;
-      position: relative;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #e6f2fa;
+      display: flex;
+      flex-direction: column;
       min-height: 100vh;
-      padding-bottom: 70px; /* espacio para el footer */
     }
-    header {
-      padding: 1rem;
-      background-color: #4055a8;
-      color: white;
-      text-align: center;
+    main {
+      flex: 1;
     }
-    .logo {
-      position: absolute;
-      top: 20px;
-      left: 20px;
-      width: 80px;
-      height: 80px;
+    .section-title {
+      margin-top: 50px;
+      margin-bottom: 20px;
     }
-    .menu {
-      position: absolute;
-      top: 20px;
-      left: 120px;
-      width: 200px;
-      height: 80px;
+    .card {
+      margin-bottom: 30px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     }
-    .slogan {
-      position: absolute;
-      top: 20px;
-      right: 20px;
-      width: 200px;
-      height: 80px;
-    }
-    .img4 {
-      position: absolute;
-      top: 120px;
-      right: 40px;
-      width: 120px;
-      height: 100px;
-    }
-    .search-box {
-      position: absolute;
-      top: 160px;
-      right: 180px;
-      width: 300px;
-      height: 40px;
-    }
-    .search-box input {
-      width: 100%;
-      height: 100%;
-      padding: 5px;
-    }
-    .img6 {
-      position: absolute;
-      top: 240px;
-      right: 40px;
-      width: 120px;
-      height: 100px;
-    }
-    .img9 {
-      position: absolute;
-      top: 240px;
-      left: 40px;
-      width: 120px;
-      height: 100px;
-    }
-    .img10 {
-      position: absolute;
-      top: 120px;
-      left: 40px;
-      width: 120px;
-      height: 100px;
-    }
-    .main-content {
-      position: absolute;
-      top: 120px;
-      left: 180px;
-      right: 180px;
-      bottom: 120px;
-      background-color: #6c80d4;
-    }
-    .img7 {
-      position: absolute;
-      bottom: 60px;
-      left: 260px;
-      width: 100px;
-      height: 60px;
-    }
-    img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
+    .card i {
+      font-size: 2rem;
+      color: #0d6efd;
     }
     footer {
-      position: fixed;
-      bottom: 0;
-      width: 100%;
-      background-color: #4055a8;
+      background-color: #0d6efd;
       color: white;
       text-align: center;
-      padding: 10px 0;
-      font-size: 0.9rem;
-      z-index: 1000;
+      padding: 15px 0;
     }
   </style>
 </head>
 <body>
 
-  <!-- Elementos visuales -->
-  <div class="logo"><img src="img/logo.png" alt="Logo"></div>
-  <div class="menu"><img src="img/menu.png" alt="Menú"></div>
-  <div class="slogan"><img src="img/slogan.png" alt="Eslogan"></div>
-  <div class="img4"><img src="img/imagen4.jpg" alt="Imagen 4"></div>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">InfoWeb Escalante</a>
+      <div class="collapse navbar-collapse">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#">Noticias</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Concursos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Galería</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Recursos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-  <!-- Búsqueda -->
-  <div class="search-box"><input type="text" placeholder="Buscar en el sitio..."></div>
+  <!-- Contenido -->
+  <main class="container">
+    <h2 class="section-title text-center">Bienvenido al portal educativo</h2>
+    <p class="text-center">Explora las secciones disponibles para fomentar la lectura, el conocimiento y la cultura.</p>
 
-  <!-- Laterales -->
-  <div class="img6"><img src="img/imagen6.jpg" alt="Imagen 6"></div>
-  <div class="img9"><img src="img/imagen9.jpg" alt="Imagen 9"></div>
-  <div class="img10"><img src="img/imagen10.jpg" alt="Imagen 10"></div>
+    <div class="row">
+      <!-- Noticias -->
+      <div class="col-md-4">
+        <div class="card h-100 text-center">
+          <div class="card-body">
+            <i class="bi bi-newspaper mb-2"></i>
+            <h5 class="card-title">Noticias y Novedades</h5>
+            <p class="card-text">Mantente informado sobre eventos, libros nuevos y anuncios escolares.</p>
+            <a href="#" class="btn btn-primary">Ver noticias</a>
+          </div>
+        </div>
+      </div>
 
-  <!-- Contenido central -->
-  <div class="main-content"></div>
+      <!-- Concursos -->
+      <div class="col-md-4">
+        <div class="card h-100 text-center">
+          <div class="card-body">
+            <i class="bi bi-trophy mb-2"></i>
+            <h5 class="card-title">Concursos Literarios</h5>
+            <p class="card-text">Participa con tus escritos en actividades y certámenes creativos.</p>
+            <a href="#" class="btn btn-primary">Ver concursos</a>
+          </div>
+        </div>
+      </div>
 
-  <!-- Imagen inferior -->
-  <div class="img7"><img src="img/imagen7.jpg" alt="Imagen 7"></div>
+      <!-- Galería -->
+      <div class="col-md-4">
+        <div class="card h-100 text-center">
+          <div class="card-body">
+            <i class="bi bi-image mb-2"></i>
+            <h5 class="card-title">Galería Cultural</h5>
+            <p class="card-text">Revisa fotos, murales y momentos especiales vividos en la biblioteca.</p>
+            <a href="#" class="btn btn-primary">Ver galería</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <!-- Recursos -->
+      <div class="col-md-6">
+        <div class="card h-100 text-center">
+          <div class="card-body">
+            <i class="bi bi-journal-bookmark-fill mb-2"></i>
+            <h5 class="card-title">Recursos Digitales</h5>
+            <p class="card-text">Descarga libros, fichas de lectura y materiales útiles.</p>
+            <a href="#" class="btn btn-primary">Ver recursos</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contacto -->
+      <div class="col-md-6">
+        <div class="card h-100 text-center">
+          <div class="card-body">
+            <i class="bi bi-envelope-check mb-2"></i>
+            <h5 class="card-title">Contacto y Sugerencias</h5>
+            <p class="card-text">Envíanos tus ideas o necesidades. Tu opinión cuenta.</p>
+            <a href="#" class="btn btn-primary">Contactar</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
 
   <!-- Footer -->
   <footer>
-    © 2024 InfoWeb Escalante. Todos los derechos reservados. | Desarrollado por Angello Rodríguez Tejeda – Universidad de Ciencias Pedagógicas "Enrique José Varona"
+    &copy; 2024 InfoWeb Escalante. Todos los derechos reservados.
   </footer>
 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
