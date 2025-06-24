@@ -18,8 +18,15 @@
       flex: 1;
     }
     .section-title {
-      margin-top: 50px;
-      margin-bottom: 20px;
+      margin-top: 30px;
+      margin-bottom: 10px;
+    }
+    .intro-banner {
+      width: 100%;
+      max-height: 300px;
+      object-fit: cover;
+      border-radius: 6px;
+      margin-top: 20px;
     }
     .card {
       margin-bottom: 30px;
@@ -34,6 +41,12 @@
       color: white;
       text-align: center;
       padding: 15px 0;
+    }
+    .galeria img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 5px;
     }
   </style>
 </head>
@@ -57,72 +70,64 @@
 
   <!-- Contenido -->
   <main class="container">
+    <img src="img/banner-biblioteca.jpg" alt="Banner Biblioteca" class="intro-banner">
     <h2 class="section-title text-center">Bienvenido al portal educativo</h2>
     <p class="text-center">Explora las secciones disponibles para fomentar la lectura, el conocimiento y la cultura.</p>
 
-    <div class="row">
-      <!-- Noticias -->
-      <div class="col-md-4">
-        <div class="card h-100 text-center">
-          <div class="card-body">
-            <i class="bi bi-newspaper mb-2"></i>
-            <h5 class="card-title">Noticias y Novedades</h5>
-            <p class="card-text">Mantente informado sobre eventos, libros nuevos y anuncios escolares.</p>
-            <a href="#" class="btn btn-primary">Ver noticias</a>
+    <!-- Módulo II -->
+    <section id="noticias">
+      <h3 class="section-title">📰 Últimas noticias</h3>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Nueva colección de libros</h5>
+              <h6 class="card-subtitle mb-2 text-muted">Junio 2025</h6>
+              <p class="card-text">La biblioteca ha incorporado 150 nuevos títulos de literatura juvenil.</p>
+              <a href="#" class="card-link">Leer más</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Taller de lectura crítica</h5>
+              <h6 class="card-subtitle mb-2 text-muted">Mayo 2025</h6>
+              <p class="card-text">Estudiantes de 9no grado participaron en debates sobre cuentos cubanos.</p>
+              <a href="#" class="card-link">Leer más</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Visita de autores locales</h5>
+              <h6 class="card-subtitle mb-2 text-muted">Abril 2025</h6>
+              <p class="card-text">Escritores compartieron con alumnos sus experiencias literarias.</p>
+              <a href="#" class="card-link">Leer más</a>
+            </div>
           </div>
         </div>
       </div>
+    </section>
 
-      <!-- Concursos -->
-      <div class="col-md-4">
-        <div class="card h-100 text-center">
-          <div class="card-body">
-            <i class="bi bi-trophy mb-2"></i>
-            <h5 class="card-title">Concursos Literarios</h5>
-            <p class="card-text">Participa con tus escritos en actividades y certámenes creativos.</p>
-            <a href="#" class="btn btn-primary">Ver concursos</a>
-          </div>
-        </div>
-      </div>
+    <section id="concursos">
+      <h3 class="section-title">🏆 Concursos Literarios</h3>
+      <ul>
+        <li><strong>Concurso de cuentos escolares</strong> – Hasta el 15 de julio</li>
+        <li><strong>Microrrelatos patrióticos</strong> – Participación abierta a todos los grados</li>
+        <li><strong>Diseña tu portada de libro</strong> – Resultado se expondrá en la galería</li>
+      </ul>
+    </section>
 
-      <!-- Galería -->
-      <div class="col-md-4">
-        <div class="card h-100 text-center">
-          <div class="card-body">
-            <i class="bi bi-image mb-2"></i>
-            <h5 class="card-title">Galería Cultural</h5>
-            <p class="card-text">Revisa fotos, murales y momentos especiales vividos en la biblioteca.</p>
-            <a href="#" class="btn btn-primary">Ver galería</a>
-          </div>
-        </div>
+    <section id="galeria">
+      <h3 class="section-title">🎨 Galería Cultural</h3>
+      <div class="row galeria">
+        <div class="col-md-4"><img src="img/galeria1.jpg" alt="Actividad 1"></div>
+        <div class="col-md-4"><img src="img/galeria2.jpg" alt="Actividad 2"></div>
+        <div class="col-md-4"><img src="img/galeria3.jpg" alt="Actividad 3"></div>
       </div>
-    </div>
-
-    <div class="row">
-      <!-- Recursos -->
-      <div class="col-md-6">
-        <div class="card h-100 text-center">
-          <div class="card-body">
-            <i class="bi bi-journal-bookmark-fill mb-2"></i>
-            <h5 class="card-title">Recursos Digitales</h5>
-            <p class="card-text">Descarga libros, fichas de lectura y materiales útiles.</p>
-            <a href="#" class="btn btn-primary">Ver recursos</a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Contacto -->
-      <div class="col-md-6">
-        <div class="card h-100 text-center">
-          <div class="card-body">
-            <i class="bi bi-envelope-check mb-2"></i>
-            <h5 class="card-title">Contacto y Sugerencias</h5>
-            <p class="card-text">Envíanos tus ideas o necesidades. Tu opinión cuenta.</p>
-            <a href="#" class="btn btn-primary">Contactar</a>
-          </div>
-        </div>
-      </div>
-    </div>
+    </section>
   </main>
 
   <!-- Footer -->
@@ -133,4 +138,3 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
-
